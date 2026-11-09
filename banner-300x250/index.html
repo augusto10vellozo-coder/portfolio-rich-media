@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=300, initial-scale=1">
+<title>TaskBio — banner 300x250</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;width:300px;height:250px;overflow:hidden;background:#0d3123}
+  .ad{
+    position:relative;display:block;width:300px;height:250px;overflow:hidden;cursor:pointer;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    color:#fff;text-decoration:none;
+    background:
+      radial-gradient(120% 90% at 100% 100%, rgba(233,242,228,.16) 0%, rgba(233,242,228,0) 60%),
+      linear-gradient(160deg,#0d3123 0%,#123d2c 55%,#1b5a41 100%);
+  }
+  .glow{
+    position:absolute;width:190px;height:190px;right:-70px;bottom:-80px;border-radius:50%;
+    background:radial-gradient(circle,#f2f7ee 0%,rgba(242,247,238,0) 70%);
+    opacity:.18;animation:breathe 6s ease-in-out infinite;
+  }
+  @keyframes breathe{
+    0%,100%{transform:scale(1);opacity:.16}
+    50%{transform:scale(1.12);opacity:.24}
+  }
+  .pad{position:relative;padding:15px 18px 0}
+  .brand{display:flex;align-items:center;gap:8px;animation:fade .6s ease .05s both}
+  .mark{
+    width:26px;height:26px;border-radius:50%;background:#fff;color:#123d2c;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:11px;flex:0 0 auto;
+  }
+  .word{font-size:14px;font-weight:700;line-height:1;letter-spacing:-.01em}
+  .tag{
+    font-size:7.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+    color:rgba(255,255,255,.58);margin-top:3px;
+  }
+  h1{
+    margin:13px 0 0;font-size:26px;line-height:1.09;letter-spacing:-.022em;font-weight:800;
+    animation:rise .7s cubic-bezier(.2,.7,.2,1) .18s both;
+  }
+  h1 em{font-style:normal;color:#cfe6c4}
+  .sub{
+    margin:7px 0 0;font-size:10px;line-height:1.45;color:rgba(255,255,255,.72);max-width:152px;
+    animation:rise .7s cubic-bezier(.2,.7,.2,1) .3s both;
+  }
+  .cta{
+    position:absolute;left:18px;bottom:15px;display:flex;align-items:center;gap:6px;
+    background:#fff;color:#123d2c;font-size:10.5px;font-weight:700;padding:8px 13px;border-radius:999px;
+    animation:rise .7s cubic-bezier(.2,.7,.2,1) .42s both;
+  }
+  .cta .arrow{transition:transform .25s ease}
+  .ad:hover .cta .arrow{transform:translateX(3px)}
+  .chips{position:absolute;right:16px;bottom:15px;display:flex;flex-direction:column;gap:5px;align-items:flex-end}
+  .chip{
+    display:flex;align-items:center;gap:5px;padding:4px 9px 4px 7px;border-radius:999px;
+    background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);
+    font-size:8.5px;font-weight:600;color:rgba(255,255,255,.9);white-space:nowrap;
+    animation:chipIn .5s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .chip i{display:block;width:5px;height:5px;border-radius:50%;background:#8fd18f}
+  .chip:nth-child(1){animation-delay:.55s}
+  .chip:nth-child(2){animation-delay:.65s}
+  .chip:nth-child(3){animation-delay:.75s}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes chipIn{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+  <a class="ad" href="https://taskbio.com.br"
+     onclick="window.open(window.clickTag || 'https://taskbio.com.br','_blank');return false;">
+    <div class="glow"></div>
+    <div class="pad">
+      <div class="brand">
+        <div class="mark">TB</div>
+        <div>
+          <div class="word">TaskBio</div>
+          <div class="tag">vida saudável</div>
+        </div>
+      </div>
+      <h1>Sua rotina,<br><em>dia após dia.</em></h1>
+      <p class="sub">Agenda, treino, alimentação e estudos no mesmo lugar.</p>
+    </div>
+    <div class="chips">
+      <div class="chip"><i></i>Treino</div>
+      <div class="chip"><i></i>Alimentação</div>
+      <div class="chip"><i></i>Estudos</div>
+    </div>
+    <div class="cta">Conhecer o app <span class="arrow">→</span></div>
+  </a>
+</body>
+</html>

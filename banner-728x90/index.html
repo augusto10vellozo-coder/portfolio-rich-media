@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=728, initial-scale=1">
+<title>TaskBio — banner 728x90</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;width:728px;height:90px;overflow:hidden;background:#0d3123}
+  .ad{
+    position:relative;display:flex;align-items:center;width:728px;height:90px;overflow:hidden;
+    padding:0 20px;cursor:pointer;text-decoration:none;color:#fff;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:
+      radial-gradient(90% 140% at 100% 50%, rgba(233,242,228,.14) 0%, rgba(233,242,228,0) 62%),
+      linear-gradient(100deg,#0d3123 0%,#123d2c 52%,#1b5a41 100%);
+  }
+  .glow{
+    position:absolute;width:220px;height:220px;right:-40px;top:-70px;border-radius:50%;
+    background:radial-gradient(circle,#f2f7ee 0%,rgba(242,247,238,0) 70%);
+    opacity:.15;animation:breathe 7s ease-in-out infinite;
+  }
+  @keyframes breathe{0%,100%{transform:scale(1);opacity:.13}50%{transform:scale(1.1);opacity:.2}}
+
+  .brand{display:flex;align-items:center;gap:8px;flex:0 0 auto;animation:fade .6s ease .05s both}
+  .mark{
+    width:30px;height:30px;border-radius:50%;background:#fff;color:#123d2c;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:12px;
+  }
+  .word{font-size:15px;font-weight:700;line-height:1.05;letter-spacing:-.01em}
+  .tag{font-size:7.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:2px}
+
+  .sep{width:1px;height:38px;background:rgba(255,255,255,.16);margin:0 18px;flex:0 0 auto}
+
+  .copy{flex:1 1 auto;min-width:0;animation:rise .7s cubic-bezier(.2,.7,.2,1) .18s both}
+  h1{
+    margin:0;font-size:19px;line-height:1.15;letter-spacing:-.018em;font-weight:800;
+  }
+  h1 em{font-style:normal;color:#cfe6c4}
+  .sub{margin:4px 0 0;font-size:10.5px;line-height:1.3;color:rgba(255,255,255,.7);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+  .cta{
+    flex:0 0 auto;display:flex;align-items:center;gap:6px;margin-left:16px;
+    background:#fff;color:#123d2c;font-size:11.5px;font-weight:700;padding:9px 16px;border-radius:999px;
+    animation:rise .7s cubic-bezier(.2,.7,.2,1) .34s both;
+  }
+  .arrow{transition:transform .25s ease}
+  .ad:hover .arrow{transform:translateX(3px)}
+
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+  <a class="ad" href="https://taskbio.com.br"
+     onclick="window.open(window.clickTag || 'https://taskbio.com.br','_blank');return false;">
+    <div class="glow"></div>
+    <div class="brand">
+      <div class="mark">TB</div>
+      <div>
+        <div class="word">TaskBio</div>
+        <div class="tag">vida saudável</div>
+      </div>
+    </div>
+    <div class="sep"></div>
+    <div class="copy">
+      <h1>Sua rotina, <em>dia após dia.</em></h1>
+      <p class="sub">Agenda, treino, alimentação e estudos no mesmo lugar.</p>
+    </div>
+    <div class="cta">Conhecer o app <span class="arrow">→</span></div>
+  </a>
+</body>
+</html>
