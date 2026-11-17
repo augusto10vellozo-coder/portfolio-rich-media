@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rich media — banner HTML5 e e-mail marketing | Cezar Vellozo</title>
+<meta name="description" content="Três peças de campanha para o TaskBio: banner 300x250, leaderboard 728x90 e e-mail de 600 px. HTML único, sem build, sem framework e sem CDN.">
+<meta property="og:title" content="Rich media — banner HTML5 e e-mail marketing">
+<meta property="og:description" content="Banner 300x250, leaderboard 728x90 e e-mail responsivo. Arquivo único, abaixo de 5 KB.">
+<meta property="og:image" content="https://augusto10vellozo-coder.github.io/portfolio-rich-media/social-preview.png">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --verde: #123d2c;
+    --verde-escuro: #0d3123;
+    --verde-claro: #dcebd3;
+    --areia: #f4f1ea;
+    --texto: #1d2a23;
+    --suave: #5c6b62;
+    --linha: #dcd8cc;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--areia);
+    color: var(--texto);
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+  .topo {
+    background:
+      radial-gradient(120% 90% at 100% 100%, rgba(233, 242, 228, .16) 0%, rgba(233, 242, 228, 0) 60%),
+      linear-gradient(160deg, var(--verde-escuro) 0%, var(--verde) 55%, #1b5a41 100%);
+    color: #fff;
+    padding: 28px 24px 72px;
+  }
+  .limite { max-width: 1040px; margin: 0 auto; }
+  .marca { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+  .marca .selo {
+    width: 34px; height: 34px; border-radius: 50%; background: #fff; color: var(--verde);
+    display: grid; place-items: center; font-weight: 800; font-size: 13px;
+  }
+  .marca small { display: block; font-size: 11px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+  h1 { margin: 44px 0 0; font-size: clamp(32px, 5vw, 52px); line-height: 1.06; letter-spacing: -.025em; max-width: 760px; }
+  h1 em { font-style: normal; color: #cfe6c4; }
+  .topo p { margin: 18px 0 0; max-width: 620px; color: rgba(255,255,255,.78); font-size: 17px; }
+  .selos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+  .selo-tec {
+    font-size: 12px; font-weight: 600; padding: 6px 12px; border-radius: 999px;
+    background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.16); color: rgba(255,255,255,.92);
+  }
+  main { max-width: 1040px; margin: -40px auto 0; padding: 0 24px 72px; }
+  .grade { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .peca {
+    background: #fff; border: 1px solid var(--linha); border-radius: 16px; overflow: hidden;
+    display: flex; flex-direction: column; box-shadow: 0 18px 40px -32px rgba(13, 49, 35, .45);
+  }
+  .peca .visor {
+    height: 220px; display: grid; place-items: center; padding: 18px;
+    background: repeating-conic-gradient(#f7f5ef 0% 25%, #eeece4 0% 50%) 50% / 18px 18px;
+  }
+  .peca img { max-width: 100%; max-height: 100%; display: block; border-radius: 6px; }
+  .peca .corpo { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .peca h2 { margin: 0; font-size: 18px; letter-spacing: -.01em; }
+  .peca p { margin: 0; font-size: 14px; color: var(--suave); flex: 1; }
+  .peca .abrir {
+    margin-top: 12px; align-self: flex-start; text-decoration: none; font-size: 14px; font-weight: 700;
+    color: var(--verde); border-bottom: 2px solid var(--verde-claro); padding-bottom: 2px;
+  }
+  .peca .abrir:hover { border-color: var(--verde); }
+  .ficha {
+    margin-top: 28px; background: #fff; border: 1px solid var(--linha); border-radius: 16px;
+    padding: 24px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .ficha h3 { margin: 0 0 4px; font-size: 15px; }
+  .ficha p { margin: 0; font-size: 13.5px; color: var(--suave); }
+  footer { border-top: 1px solid var(--linha); padding: 24px; text-align: center; font-size: 13px; color: var(--suave); }
+  footer a { color: var(--verde); font-weight: 600; text-decoration: none; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="limite">
+    <div class="marca">
+      <span class="selo">TB</span>
+      <span>TaskBio <small>Rich media</small></span>
+    </div>
+    <h1>Peças de campanha que rodam <em>em qualquer lugar</em>.</h1>
+    <p>
+      Banner 300×250, leaderboard 728×90 e um e-mail de 600 px feitos para veiculação real:
+      arquivo único, sem build, sem framework, sem CDN e abaixo de 5 KB por banner.
+    </p>
+    <div class="selos">
+      <span class="selo-tec">HTML único</span>
+      <span class="selo-tec">≤ 5 KB</span>
+      <span class="selo-tec">transform + opacity</span>
+      <span class="selo-tec">clickTag</span>
+      <span class="selo-tec">prefers-reduced-motion</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="grade" aria-label="Peças da campanha">
+    <article class="peca">
+      <div class="visor"><img src="banner-300x250/preview.png" alt="Banner retângulo médio 300 por 250 do TaskBio" width="300" height="250"></div>
+      <div class="corpo">
+        <h2>Retângulo médio</h2>
+        <p>300×250. A peça mais usada em display: marca, promessa e CTA no mesmo quadro.</p>
+        <a class="abrir" href="banner-300x250/index.html">Abrir banner →</a>
+      </div>
+    </article>
+
+    <article class="peca">
+      <div class="visor"><img src="banner-728x90/preview.png" alt="Leaderboard 728 por 90 do TaskBio" width="728" height="90"></div>
+      <div class="corpo">
+        <h2>Leaderboard</h2>
+        <p>728×90. Formato horizontal para topo de site, com leitura em menos de dois segundos.</p>
+        <a class="abrir" href="banner-728x90/index.html">Abrir banner →</a>
+      </div>
+    </article>
+
+    <article class="peca">
+      <div class="visor"><img src="email/preview.png" alt="E-mail de campanha do TaskBio em 600 pixels" width="600" height="800" style="max-height:190px;object-fit:cover;object-position:top"></div>
+      <div class="corpo">
+        <h2>E-mail de campanha</h2>
+        <p>600 px, tabela e CSS inline. Estrutura que sobrevive ao Gmail, Outlook e apps móveis.</p>
+        <a class="abrir" href="email/email-taskbio.html">Abrir e-mail →</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="ficha" aria-label="Decisões técnicas">
+    <div>
+      <h3>Animação barata</h3>
+      <p>Só <code>transform</code> e <code>opacity</code>, que a GPU compõe sem refazer layout ou pintura.</p>
+    </div>
+    <div>
+      <h3>Zero requisição</h3>
+      <p>Marca em CSS, fonte do sistema e nenhuma imagem externa. Nada para o veículo bloquear.</p>
+    </div>
+    <div>
+      <h3>Destino trocável</h3>
+      <p><code>window.clickTag</code> permite que a mídia aponte o clique sem editar o criativo.</p>
+    </div>
+    <div>
+      <h3>E-mail é outro planeta</h3>
+      <p>Tabela, CSS inline, 600 px e botão com <code>bgcolor</code> para renderizar no Outlook.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Feito por <a href="https://augusto10vellozo-coder.github.io/site-servicos/">Cezar Vellozo</a> ·
+  identidade do <a href="https://taskbio.com.br">TaskBio</a> ·
+  <a href="https://github.com/augusto10vellozo-coder/portfolio-rich-media">código no GitHub</a>
+</footer>
+</body>
+</html>
