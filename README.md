@@ -5,6 +5,8 @@ veiculação: **sem build, sem framework, sem CDN**.
 
 Tudo usa a identidade do TaskBio (projeto real, no ar em [taskbio.com.br](https://taskbio.com.br)).
 
+**Ver online:** [augusto10vellozo-coder.github.io/portfolio-rich-media](https://augusto10vellozo-coder.github.io/portfolio-rich-media/)
+
 | Peça | Arquivo | Formato |
 |---|---|---|
 | Banner retângulo médio | [`banner-300x250/index.html`](banner-300x250/index.html) | HTML único, 300×250 |
