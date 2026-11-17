@@ -1,6 +1,6 @@
 # Rich media — banner HTML5 e e-mail marketing
 
-Duas peças de produção para campanha de mídia paga, escritas para rodar em ambiente real de
+Três peças de produção para campanha de mídia paga, escritas para rodar em ambiente real de
 veiculação: **sem build, sem framework, sem CDN**.
 
 Tudo usa a identidade do TaskBio (projeto real, no ar em [taskbio.com.br](https://taskbio.com.br)).
