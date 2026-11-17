@@ -1,5 +1,7 @@
 # Rich media — banner HTML5 e e-mail marketing
 
+![Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100%2F100-2ea44f?style=flat-square)
+
 Três peças de produção para campanha de mídia paga, escritas para rodar em ambiente real de
 veiculação: **sem build, sem framework, sem CDN**.
 
