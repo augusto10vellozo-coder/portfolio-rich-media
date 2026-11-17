@@ -61,7 +61,7 @@
     height: 220px; display: grid; place-items: center; padding: 18px;
     background: repeating-conic-gradient(#f7f5ef 0% 25%, #eeece4 0% 50%) 50% / 18px 18px;
   }
-  .peca img { max-width: 100%; max-height: 100%; display: block; border-radius: 6px; }
+  .peca img { max-width: 100%; max-height: 100%; height: auto; display: block; border-radius: 6px; }
   .peca .corpo { padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
   .peca h2 { margin: 0; font-size: 18px; letter-spacing: -.01em; }
   .peca p { margin: 0; font-size: 14px; color: var(--suave); flex: 1; }
@@ -127,7 +127,7 @@
     </article>
 
     <article class="peca">
-      <div class="visor"><img src="email/preview.png" alt="E-mail de campanha do TaskBio em 600 pixels" width="600" height="800" style="max-height:190px;object-fit:cover;object-position:top"></div>
+      <div class="visor"><img src="email/preview.png" alt="E-mail de campanha do TaskBio em 600 pixels" style="max-height:190px;max-width:100%;width:auto;height:auto"></div>
       <div class="corpo">
         <h2>E-mail de campanha</h2>
         <p>600 px, tabela e CSS inline. Estrutura que sobrevive ao Gmail, Outlook e apps móveis.</p>
